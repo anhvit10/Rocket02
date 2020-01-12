@@ -1,0 +1,28 @@
+Đối tượng : sinh viên, giảng viên, phòng học, lớp tín chỉ, thiết bị dạy học, câu lạc bộ, học phí.
+
+Sinh viên : 	Nộp học phí
+		đăng kí tín chỉ 
+		hủy tín chỉ
+		đổi điểm Đoàn 
+		đổi điểm rèn luyện 
+		cập nhật thông tin cá nhân
+		làm bài tập 
+		làm đề án 
+		tham gia câu lạc bộ 
+		nghiên cứu khoa học 
+		thi
+		làm bài kiểm tra
+
+Giảng viên : 	Dạy học
+		điểm danh
+		kiểm tra 
+		chấm điểm
+		nghiên cứu khoa học
+		quản lý sinh viên 
+		quản lý điểm
+		giao bài tập
+
+Câu lạc bộ :	Tuyển thành viên
+		khai trừ thành viên
+		sinh hoạt ngoại khóa
+		đánh giá thành viên
