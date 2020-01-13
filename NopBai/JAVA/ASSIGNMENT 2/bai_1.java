@@ -10,7 +10,7 @@ public class bai_1 {
 		
 		String[] MiddleNameArray = {"Viet ", "Thi ", "Duy ", "Van ", "Thu ", "Tien ", "Trung "};
 				
-		String[] LastNameArray = {"Anh	", "Trang	", "Thang	", "Thanh	", "Tra	", "Dung	", "Nhat	"};
+		String[] LastNameArray = {"Anh	 ", "Trang	", "Thang	", "Thanh	", "Tra	", "Dung	", "Nhat	"};
 		
 // question 1		
 		String[] Name = new String[10];
@@ -36,8 +36,8 @@ public class bai_1 {
 		String[] BirthDate = new String[10];
 			for(int i=0;i<=9;i++)
 				{
-					int x = 1 + rd.nextInt(31);
-					int y = 1 + rd.nextInt(12);
+					int x = 2 + rd.nextInt(29);
+					int y = 3 + rd.nextInt(9);
 					BirthDate[i] = x + "/" + y + "/" + "1991";
 				}
 			
