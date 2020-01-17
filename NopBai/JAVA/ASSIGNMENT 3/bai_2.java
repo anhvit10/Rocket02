@@ -10,7 +10,7 @@ String[] FirstNameArray = {"Nguyen ", "Tran ", "Pham ", "Vu ", "Ha ", "Bui ", "N
 		String[] MiddleNameArray = {"Viet ", "Thi ", "Duy ", "Van ", "Thu ", "Tien ", "Trung "};
 				
 		String[] LastNameArray = {"Anh	 ", "Trang	", "Thang	", "Thanh	", "Tra	", "Dung	", "Nhat	"};
-				
+		
 		String[] Name = new String[10];
 		Random rd = new Random();
 			for(int i=0;i<=9;i++)
@@ -46,96 +46,185 @@ String[] FirstNameArray = {"Nguyen ", "Tran ", "Pham ", "Vu ", "Ha ", "Bui ", "N
 		
 		for(int i=0;i<10;i++)
 		{
+			if(i==0)
+			{
+				int b = 5 + rd.nextInt(3);
+				String B = String.valueOf(b);
+				int c = 3 + rd.nextInt(2);
+				String C = String.valueOf(c);
+				int d = 1 + rd.nextInt(2);
+				String D = String.valueOf(d);
+				int e = 0;
+				String E = String.valueOf(e);
+				float avg = (float) (c+b+c+d+e)/5;
+				RA[i] = C;
+				SD[i] = B;
+				CP[i] = C;
+				CUT[i] = D;
+				FMT[i] = E;
+				AVG[i] = avg;
+			}
+			if(i==1)
+			{
+				int b = 5 + rd.nextInt(3);
+				String B = String.valueOf(b);
+				int c = 3 + rd.nextInt(2);
+				String C = String.valueOf(c);
+				int d = 1 + rd.nextInt(2);
+				String D = String.valueOf(d);
+				int e = 0;
+				String E = String.valueOf(e);
+				float avg = (float) (b+b+d+e+c)/5;
+				RA[i] = B;
+				SD[i] = B;
+				CP[i] = D;
+				CUT[i] = E;
+				FMT[i] = C;
+				AVG[i] = avg;
+			}
+			if(i==2)
+			{
+				int a = 8 + rd.nextInt(3);
+				String A = String.valueOf(a);
+				int b = 5 + rd.nextInt(3);
+				String B = String.valueOf(b);
+				int c = 3 + rd.nextInt(2);
+				String C = String.valueOf(c);
+				int d = 1 + rd.nextInt(2);
+				String D = String.valueOf(d);
+				int e = 0;
+				String E = String.valueOf(e);
+				float avg = (float) (c+d+e+a+b)/5;
+				RA[i] = C;
+				SD[i] = D;
+				CP[i] = E;
+				CUT[i] = A;
+				FMT[i] = B;
+				AVG[i] = avg;
+			}
+			if(i==3)
+			{
+				int b = 5 + rd.nextInt(3);
+				String B = String.valueOf(b);
+				int c = 3 + rd.nextInt(2);
+				String C = String.valueOf(c);
+				int d = 1 + rd.nextInt(2);
+				String D = String.valueOf(d);
+				int e = 0;
+				String E = String.valueOf(e);
+				float avg = (float) (e+c+b+b+d)/5;
+				RA[i] = E;
+				SD[i] = C;
+				CP[i] = B;
+				CUT[i] = B;
+				FMT[i] = D;
+				AVG[i] = avg;
+			}
+			if(i==4)
+			{
+				int a = 8 + rd.nextInt(3);
+				String A = String.valueOf(a);
+				int b = 5 + rd.nextInt(3);
+				String B = String.valueOf(b);
+				int c = 3 + rd.nextInt(2);
+				String C = String.valueOf(c);
+				int d = 1 + rd.nextInt(2);
+				String D = String.valueOf(d);
+				int e = 0;
+				String E = String.valueOf(e);
+				float avg = (float) (d+e+b+c+a)/5;
+				RA[i] = D;
+				SD[i] = E;
+				CP[i] = B;
+				CUT[i] = C;
+				FMT[i] = A;
+				AVG[i] = avg;
+			}
 			if(i==5)
 			{
 				int a = 8 + rd.nextInt(3);
 				String A = String.valueOf(a);
-				int b = 8 + rd.nextInt(3);
-				String B = String.valueOf(b);
-				int c = 8 + rd.nextInt(3);
-				String C = String.valueOf(c);
-				int d = 8 + rd.nextInt(3);
-				String D = String.valueOf(d);
-				int e = 8 + rd.nextInt(3);
-				String E = String.valueOf(e);
-				float avg = (float) (a+b+c+d+e)/5;
-				RA[i] = A;
-				SD[i] = B;
-				CP[i] = C;
-				CUT[i] = D;
-				FMT[i] = E;
-				AVG[i] = avg;
-			}
-			if(i==7 || i==2 || i==3)
-			{
-				int a = 5 + rd.nextInt(3);
-				String A = String.valueOf(a);
 				int b = 5 + rd.nextInt(3);
-				String B = String.valueOf(b);
-				int c = 5 + rd.nextInt(3);
-				String C = String.valueOf(c);
-				int d = 5 + rd.nextInt(3);
-				String D = String.valueOf(d);
-				int e = 5 + rd.nextInt(3);
-				String E = String.valueOf(e);
-				float avg = (float) (a+b+c+d+e)/5;
-				RA[i] = A;
-				SD[i] = B;
-				CP[i] = C;
-				CUT[i] = D;
-				FMT[i] = E;
-				AVG[i] = avg;
-			}
-			if(i==1 || i==9 || i==4)
-			{
-				int a = 3 + rd.nextInt(2);
-				String A = String.valueOf(a);
-				int b = 3 + rd.nextInt(2);
 				String B = String.valueOf(b);
 				int c = 3 + rd.nextInt(2);
 				String C = String.valueOf(c);
-				int d = 3 + rd.nextInt(2);
+				int d = 1 + rd.nextInt(2);
 				String D = String.valueOf(d);
-				int e = 3 + rd.nextInt(2);
-				String E = String.valueOf(e);
-				float avg = (float) (a+b+c+d+e)/5;
-				RA[i] = A;
-				SD[i] = B;
-				CP[i] = C;
-				CUT[i] = D;
-				FMT[i] = E;
+				float avg = (float) (d+c+a+c+b)/5;
+				RA[i] = D;
+				SD[i] = C;
+				CP[i] = A;
+				CUT[i] = C;
+				FMT[i] = B;
 				AVG[i] = avg;
 			}
-			if(i==0 || i==6)
+			if(i==6)
 			{
-				int a = 1 + rd.nextInt(2);
-				String A = String.valueOf(a);
-				int b = 1 + rd.nextInt(2);
+				int b = 5 + rd.nextInt(3);
 				String B = String.valueOf(b);
-				int c = 1 + rd.nextInt(2);
+				int c = 3 + rd.nextInt(2);
 				String C = String.valueOf(c);
 				int d = 1 + rd.nextInt(2);
 				String D = String.valueOf(d);
-				int e = 1 + rd.nextInt(2);
-				String E = String.valueOf(e);
-				float avg = (float) (a+b+c+d+e)/5;
-				RA[i] = A;
-				SD[i] = B;
+				float avg = (float) (b+b+c+b+c)/5;
+				RA[i] = B;
+				SD[i] = D;
 				CP[i] = C;
-				CUT[i] = D;
-				FMT[i] = E;
+				CUT[i] = B;
+				FMT[i] = C;
+				AVG[i] = avg;
+			}
+			if(i==7)
+			{
+				int a = 8 + rd.nextInt(3);
+				String A = String.valueOf(a);
+				int b = 5 + rd.nextInt(3);
+				String B = String.valueOf(b);
+				int c = 3 + rd.nextInt(2);
+				String C = String.valueOf(c);
+				int d = 1 + rd.nextInt(2);
+				String D = String.valueOf(d);
+				float avg = (float) (b+a+d+c+b)/5;
+				RA[i] = B;
+				SD[i] = A;
+				CP[i] = D;
+				CUT[i] = C;
+				FMT[i] = B;
 				AVG[i] = avg;
 			}
 			if(i==8)
 			{
-				int a = 0;
+				int b = 5 + rd.nextInt(3);
+				String B = String.valueOf(b);
+				int c = 3 + rd.nextInt(2);
+				String C = String.valueOf(c);
+				int d = 1 + rd.nextInt(2);
+				String D = String.valueOf(d);
+				float avg = (float) (c+b+c+d+c)/5;
+				RA[i] = C;
+				SD[i] = B;
+				CP[i] = C;
+				CUT[i] = D;
+				FMT[i] = C;
+				AVG[i] = avg;
+			}
+			if(i==9)
+			{
+				int a = 8 + rd.nextInt(3);
 				String A = String.valueOf(a);
+				int b = 5 + rd.nextInt(3);
+				String B = String.valueOf(b);
+				int c = 3 + rd.nextInt(2);
+				String C = String.valueOf(c);
+				int d = 1 + rd.nextInt(2);
+				String D = String.valueOf(d);
+				float avg = (float) (a+c+b+b+d)/5;
 				RA[i] = A;
-				SD[i] = A;
-				CP[i] = A;
-				CUT[i] = A;
-				FMT[i] = A;
-				AVG[i] = 0;
+				SD[i] = C;
+				CP[i] = B;
+				CUT[i] = B;
+				FMT[i] = D;
+				AVG[i] = avg;
 			}
 		}
 //question 6
