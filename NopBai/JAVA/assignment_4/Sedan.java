@@ -9,11 +9,11 @@ public class Sedan extends Car{
 		this.length = length;
 	}
 	
-	double getSalePrice(){
+	int getSalePrice(int salePrice){
 		if(length > 20){
-			return(5.0);
+			return (int) (salePrice - (salePrice * 0.05));
 		}else{
-			return(10.0);
+			return (int) (salePrice - (salePrice * 0.1) );
 		}
 	}
 	

@@ -12,7 +12,7 @@ public class Car {
 		this.color = color;
 	}
 	
-	double getSalePrice(double salePrice){
+	int getSalePrice(int salePrice){
 		return(salePrice);
 	}
 	

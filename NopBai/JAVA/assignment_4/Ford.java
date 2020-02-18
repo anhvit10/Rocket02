@@ -11,9 +11,9 @@ public class Ford extends Car{
 		this.manufacturerDiscount = manufacturerDiscount;
 	}
 	
-	double getSalePrice(double salePrice){
-			double FordSale = salePrice - manufacturerDiscount;
-			return(FordSale);
+	int getSalePrice(int salePrice){
+			int FordSale = salePrice - manufacturerDiscount;
+			return FordSale;
 		}
 	
 }
