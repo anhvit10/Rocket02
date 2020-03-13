@@ -2,6 +2,10 @@ package assignment_5_bai_1;
 
 public class QuickSort extends SequenceNumber implements Sort{
 	
+	QuickSort(int n) {
+		super(n);
+	}
+
 	@Override
 	public void Sort() {
 	}
@@ -43,7 +47,7 @@ public class QuickSort extends SequenceNumber implements Sort{
 	}
 	
 	public static void main(String[] args) {
-		QuickSort quickSort = new QuickSort();
+		QuickSort quickSort = new QuickSort(5);
 		quickSort.input();
 		
 		int left = 0;

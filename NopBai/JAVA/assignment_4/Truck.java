@@ -9,7 +9,7 @@ public class Truck extends Car{
 		this.weight = weight;
 	}
 	
-	int getSalePrice(){	
+	double getSalePrice(){	
 		if(weight > 2000){
 			return(10);
 		}else{

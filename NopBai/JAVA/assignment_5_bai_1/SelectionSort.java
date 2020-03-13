@@ -2,6 +2,10 @@ package assignment_5_bai_1;
 
 public class SelectionSort extends SequenceNumber implements Sort{
 
+	SelectionSort(int n) {
+		super(n);
+	}
+
 	@Override
 	public void Sort() {
 		for(int i=0; i<arr.length; i++) {
@@ -24,7 +28,7 @@ public class SelectionSort extends SequenceNumber implements Sort{
 	}
 	
 	public static void main(String[] args) {
-		SelectionSort selectionSort = new SelectionSort();
+		SelectionSort selectionSort = new SelectionSort(4);
 		selectionSort.input(); 
 		selectionSort.Sort();
 		selectionSort.print();

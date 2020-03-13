@@ -8,12 +8,12 @@ public class Car {
 	
 	Car(int Speed, double regularPrice, String color){
 		this.Speed = Speed;
-		this.regularPrice = regularPrice;
+		this.regularPrice = (int) regularPrice;
 		this.color = color;
 	}
 	
-	int getSalePrice(int salePrice){
-		return(salePrice);
+	double getSalePrice() {
+		return regularPrice;
 	}
 	
 }
