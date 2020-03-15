@@ -10,10 +10,10 @@ public class Sedan extends Car{
 	}
 	
 	double getSalePrice(){
-		if(length > 20){
-			return (super.regularPrice - (super.regularPrice * 0.05));
+		if(this.length > 20){
+			return (super.regularPrice - super.regularPrice * 0.05);
 		}else{
-			return (super.regularPrice - (super.regularPrice * 0.1) );
+			return (super.regularPrice - super.regularPrice * 0.1);
 		}
 	}
 	

@@ -10,10 +10,10 @@ public class Truck extends Car{
 	}
 	
 	double getSalePrice(){	
-		if(weight > 2000){
-			return(10);
+		if(this.weight > 2000){
+			return (super.regularPrice - super.regularPrice * 0.1);
 		}else{
-			return(20);
+			return (super.regularPrice - super.regularPrice * 0.2);
 		}
 	}
 	
