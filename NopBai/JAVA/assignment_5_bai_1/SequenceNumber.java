@@ -11,7 +11,7 @@ public class SequenceNumber {
 		arr = new int[n];
 	}
 	
-	protected void input() {
+	public void input() {
         System.out.print("Nhap cac phan tu cua mang :\n");
         for (int i = 0; i < arr.length; i++) {
             System.out.printf("a[%d] = ", i);
@@ -22,11 +22,10 @@ public class SequenceNumber {
         System.out.println();
 	}
         
-    protected void print(){
+    public void print(){
     	 for (int i = 0; i < arr.length; i++) {
              System.out.print(arr[i] + " ");
          }
      }
-     
-     
+         
 }

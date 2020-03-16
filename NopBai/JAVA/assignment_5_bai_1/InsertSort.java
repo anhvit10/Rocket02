@@ -7,7 +7,7 @@ public class InsertSort extends SequenceNumber implements Sort{
 	}
 
 	@Override
-	public void Sort() {
+	public void sort() {
 		for(int i=1; i<arr.length; i++) {
 			int x = arr[i];
 			int y = i;
@@ -23,7 +23,7 @@ public class InsertSort extends SequenceNumber implements Sort{
 	public static void main(String[] args) {
 		InsertSort insertSort = new InsertSort(4);
 		insertSort.input(); 
-		insertSort.Sort();
+		insertSort.sort();
 		insertSort.print();
 	}
 	

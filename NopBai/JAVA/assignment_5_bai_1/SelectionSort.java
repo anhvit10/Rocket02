@@ -7,7 +7,7 @@ public class SelectionSort extends SequenceNumber implements Sort{
 	}
 
 	@Override
-	public void Sort() {
+	public void sort() {
 		for(int i=0; i<arr.length; i++) {
 			int minArr = i;
 			for(int j=i+1; j<arr.length; j++) {
@@ -30,7 +30,7 @@ public class SelectionSort extends SequenceNumber implements Sort{
 	public static void main(String[] args) {
 		SelectionSort selectionSort = new SelectionSort(4);
 		selectionSort.input(); 
-		selectionSort.Sort();
+		selectionSort.sort();
 		selectionSort.print();
 	}
 	

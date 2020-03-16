@@ -2,14 +2,14 @@ package assignment_4;
 
 public class Truck extends Car{
 
-	int weight;
+	private int weight;
 	
 	Truck(int Speed, double regularPrice, String color, int weight){
 		super(Speed, regularPrice, color);
 		this.weight = weight;
 	}
 	
-	double getSalePrice(){	
+	public double getSalePrice(){	
 		if(this.weight > 2000){
 			return (super.regularPrice - super.regularPrice * 0.1);
 		}else{

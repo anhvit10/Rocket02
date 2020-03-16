@@ -2,14 +2,14 @@ package assignment_4;
 
 public class Sedan extends Car{
 	
-	int length;
+	private int length;
 	
 	Sedan(int Speed, double regularPrice, String color, int length){
 		super(Speed, regularPrice, color);
 		this.length = length;
 	}
 	
-	double getSalePrice(){
+	public double getSalePrice(){
 		if(this.length > 20){
 			return (super.regularPrice - super.regularPrice * 0.05);
 		}else{

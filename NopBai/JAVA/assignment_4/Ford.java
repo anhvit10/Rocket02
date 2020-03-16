@@ -2,8 +2,9 @@ package assignment_4;
 
 public class Ford extends Car{
 	
-	int year;
-	int manufacturerDiscount;
+	@SuppressWarnings("unused")
+	private int year;
+	private int manufacturerDiscount;
 	
 	Ford(int Speed, double regularPrice, String color, int year, int manufacturerDiscount){
 		super(Speed, regularPrice, color);
@@ -11,8 +12,8 @@ public class Ford extends Car{
 		this.manufacturerDiscount = manufacturerDiscount;
 	}
 	
-	double getSalePrice(){
-			return (super.regularPrice - this.manufacturerDiscount);
+	public double getSalePrice(){
+			return (this.regularPrice - this.manufacturerDiscount);
 		}
 	
 }

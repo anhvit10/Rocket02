@@ -2,15 +2,16 @@ package assignment_5_bai_1;
 
 public class QuickSort extends SequenceNumber implements Sort{
 	
+
 	QuickSort(int n) {
 		super(n);
 	}
-
-	@Override
-	public void Sort() {
-	}
 	
-	public void Sort(int[] arr, int left, int right) {
+	@Override
+	public void sort() {		
+	}
+
+	public void sort(int[] arr, int left, int right) {
 		if (arr == null || arr.length == 0)
 		      return;
 
@@ -40,10 +41,10 @@ public class QuickSort extends SequenceNumber implements Sort{
 		    }
 
 		    if (left < j)
-		      Sort(arr, left, j);
+		      sort(arr, left, j);
 
 		    if (right > i)
-		      Sort(arr, i, right);
+		      sort(arr, i, right);
 	}
 	
 	public static void main(String[] args) {
@@ -53,8 +54,8 @@ public class QuickSort extends SequenceNumber implements Sort{
 		int left = 0;
 	    int right = arr.length - 1;
 	    
-	    quickSort.Sort();
-	    quickSort.Sort(arr, left, right);
+	    quickSort.sort();
+	    quickSort.sort(arr, left, right);
 	    System.out.print("Mang sau quickSort la: ");
 	    quickSort.print();
 	}

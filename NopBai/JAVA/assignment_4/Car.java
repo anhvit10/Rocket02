@@ -2,9 +2,9 @@ package assignment_4;
 
 public class Car {
 	
-	int Speed;
-	double regularPrice;
-	String color;
+	protected int Speed;
+	protected double regularPrice;
+	protected String color;
 	
 	Car(int Speed, double regularPrice, String color){
 		this.Speed = Speed;
@@ -12,7 +12,7 @@ public class Car {
 		this.color = color;
 	}
 	
-	double getSalePrice() {
+	public double getSalePrice() {
 		return regularPrice;
 	}
 	
