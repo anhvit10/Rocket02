@@ -1,8 +1,7 @@
-package assignment_6;
+package assignment_6_7;
 
 public class giaoSu extends nhanVien{
 	
-	@SuppressWarnings("unused")
 	private String faculty; //nang luc
 	private String academicDegree; //bang cap
 	private enum AcademicDegree{
@@ -25,6 +24,12 @@ public class giaoSu extends nhanVien{
 			salary = this.salaryMultiplier*730 + 1000 + this.monthlyTeachingTime*45;
 		}
 	}
+	
+	@Override 
+	public String toString(){
+		return "Name : " + fullName + "\nfaculty : " + faculty +"\nacademicDegree : " + academicDegree + "\nmonthlyTeachingTime : " + monthlyTeachingTime +"\nsalaryMultiplier : " + salaryMultiplier;
+	}
+
 	
 }
 

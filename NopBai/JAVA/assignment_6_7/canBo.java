@@ -1,12 +1,11 @@
-package assignment_6;
+package assignment_6_7;
 
 public class canBo extends nhanVien {
 	
-	@SuppressWarnings("unused")
 	private String department; //phong ban
 	private int workingTime; // so ngay lam viec
 	private String position; // chuc vu
-	private enum Position {
+	public enum Position {
 		departmentHead, viceHead, staff; //truong phong, pho tp, nhan vien
 	}
 	
@@ -24,6 +23,11 @@ public class canBo extends nhanVien {
 		}else{
 			salary = this.salaryMultiplier*730 + 500 + this.workingTime*30;
 		}
+	}
+	
+	@Override
+	public String toString(){
+		return "Name : " + fullName + "\ndepartment : " + department +"\nposition : " + position + "\nworkingTime : " + workingTime + "\nsalaryMultiplier : " + salaryMultiplier;
 	}
 
 }
