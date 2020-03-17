@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class SequenceNumber {
 	
-	protected static Scanner sc = new Scanner(System.in);
-	protected static int[] arr;
+	protected Scanner sc = new Scanner(System.in);
+	protected int[] arr;
 	
 	SequenceNumber(int n){
 		arr = new int[n];

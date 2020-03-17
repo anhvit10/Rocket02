@@ -1,7 +1,6 @@
 package assignment_5_bai_1;
 
 public class QuickSort extends SequenceNumber implements Sort{
-	
 
 	QuickSort(int n) {
 		super(n);
@@ -12,6 +11,7 @@ public class QuickSort extends SequenceNumber implements Sort{
 	}
 
 	public void sort(int[] arr, int left, int right) {
+		
 		if (arr == null || arr.length == 0)
 		      return;
 
@@ -45,19 +45,6 @@ public class QuickSort extends SequenceNumber implements Sort{
 
 		    if (right > i)
 		      sort(arr, i, right);
-	}
-	
-	public static void main(String[] args) {
-		QuickSort quickSort = new QuickSort(5);
-		quickSort.input();
-		
-		int left = 0;
-	    int right = arr.length - 1;
-	    
-	    quickSort.sort();
-	    quickSort.sort(arr, left, right);
-	    System.out.print("Mang sau quickSort la: ");
-	    quickSort.print();
 	}
 
 }

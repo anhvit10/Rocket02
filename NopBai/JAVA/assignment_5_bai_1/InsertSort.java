@@ -19,13 +19,5 @@ public class InsertSort extends SequenceNumber implements Sort{
 		}
 		System.out.print("Mang sau insertSort la: ");
 	}
-	
-	public static void main(String[] args) {
-		InsertSort insertSort = new InsertSort(4);
-		insertSort.input(); 
-		insertSort.sort();
-		insertSort.print();
-	}
-	
 
 }

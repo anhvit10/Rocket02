@@ -27,11 +27,4 @@ public class SelectionSort extends SequenceNumber implements Sort{
 		arr[b] = temp;
 	}
 	
-	public static void main(String[] args) {
-		SelectionSort selectionSort = new SelectionSort(4);
-		selectionSort.input(); 
-		selectionSort.sort();
-		selectionSort.print();
-	}
-	
 }
