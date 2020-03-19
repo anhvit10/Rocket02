@@ -1,22 +1,48 @@
 package assignment_6_7;
 
-import java.util.Hashtable;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class empManagement extends nhanVien {
 	
 	public static void main(String[] args) {
 		
-		hashtable = new Hashtable<String, nhanVien>();
-
-		hashtable.put("Doan Van Hau", new canBo("Doan Van Hau", "marketing", "departmentHead", 365, 7));
-		hashtable.put("Que Ngoc Hai", new canBo("Que Ngoc Hai", "entertainment", "viceHead", 100, 4));
-		hashtable.put("Dang Van Lam", new canBo("Dang Van Lam", "advertisement", "staff", 770, 10));
-		hashtable.put("Nguyen Quang Hai", new giaoSu("Nguyen Quang Hai", "tot", "bachelor", 240, 9));
-		hashtable.put("Do Duy Manh", new giaoSu("Do Duy Manh", "tot", "master", 200, 6));
-		hashtable.put("Bui Tien Dung", new giaoSu("Bui Tien Dung", "tot", "doctor", 225, 7));
+		List<giaoSu> GiaoSu = new ArrayList<giaoSu>();
+		GiaoSu.add(new giaoSu("Doan Van Hau", "A+", "bachelor", 365, 7));
+		GiaoSu.add(new giaoSu("Dang Van Lam", "A", "master", 365, 7));
+		GiaoSu.add(new giaoSu("Do Duy Manh", "B", "bachelor", 365, 7));
+		GiaoSu.add(new giaoSu("Que Ngoc Hai", "A+", "master", 365, 7));
+		GiaoSu.add(new giaoSu("Tran Dinh Trong", "A+", "bachelor", 365, 7));
+		GiaoSu.add(new giaoSu("Bui Tien Dung", "A+", "doctor", 365, 7));
+	    GiaoSu.add(new giaoSu("Vu Van Thanh", "B", "bachelor", 365, 7));
+	    GiaoSu.add(new giaoSu("Phan Van Duc", "B", "doctor", 365, 7));
 		
-		nhanVien st1 = new nhanVien();
-       st1.search();
+		List<canBo> CanBo = new ArrayList<canBo>();
+		CanBo.add(new canBo("Doan Van Hau", "marketing", "departmentHead", 365, 7));
+		CanBo.add(new canBo("Dang Van Lam", "marketing", "departmentHead", 365, 7));
+	    CanBo.add(new canBo("Do Duy Manh", "marketing", "departmentHead", 365, 7));
+	    CanBo.add(new canBo("Que Ngoc Hai", "marketing", "departmentHead", 365, 7));
+	    CanBo.add(new canBo("Tran Dinh Trong", "entertainment", "departmentHead", 365, 7));
+	    CanBo.add(new canBo("Bui Tien Dung", "marketing", "departmentHead", 365, 7));
+	    CanBo.add(new canBo("Tran Dinh Trong", "marketing", "departmentHead", 365, 7));
+	    CanBo.add(new canBo("Nguyen Cong Phuong", "marketing", "departmentHead", 365, 7));
+	    
+	    empManagement t = new empManagement();
+	    t.find(CanBo);
+	    
+	    System.out.println("\t\tDanh sach Giao Su ");
+	    System.out.println("    Name      Faculty      AD   MTTime  SM  salary");
+        Collections.sort(GiaoSu, new Comparator<giaoSu>() {
+            @Override
+            public int compare(giaoSu o1, giaoSu o2) {
+                return o1.fullName.compareTo(o2.fullName);
+            }
+        });
+        for (giaoSu student : GiaoSu) {
+            System.out.println(student.toString());
+        }
 	}
 	
 	

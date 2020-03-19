@@ -9,7 +9,7 @@ public class giaoSu extends nhanVien{
 	}
 	private int monthlyTeachingTime; //so gio day hang thang	
 	
-	giaoSu(String fullName, String faculty, String academicDegree, int monthlyTeachingTime, int salaryMultiplier ){
+	protected giaoSu(String fullName, String faculty, String academicDegree, int monthlyTeachingTime, int salaryMultiplier ){
 		this.fullName = fullName;
 		this.faculty = faculty;
 		this.academicDegree = academicDegree;
@@ -27,9 +27,10 @@ public class giaoSu extends nhanVien{
 	
 	@Override 
 	public String toString(){
-		return "Name : " + fullName + "\nfaculty : " + faculty +"\nacademicDegree : " + academicDegree + "\nmonthlyTeachingTime : " + monthlyTeachingTime +"\nsalaryMultiplier : " + salaryMultiplier;
-	}
-
+		System.out.println("--------------------------------------------------------------");
+		return fullName  +"	 "+ faculty  +"	"+ academicDegree  +"   "+ monthlyTeachingTime  +"    "+ salaryMultiplier  +"   "+ salary ;		
+		}
 	
+
 }
 
