@@ -1,33 +1,30 @@
 package assignment_6_7;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class nhanVien {
 	
-	Scanner sc = new Scanner(System.in);
-	
 	protected String fullName; // ten day du
 	protected int salaryMultiplier; //he so luong
-	protected int salary; // tien luong
+	protected float allowance;
+	protected float salary; // tien luong
 	
-	public String getFullName() {
-		return fullName;
-	}
+	static Scanner sc = new Scanner(System.in);
 	
-	protected void find(List<canBo> list){
-		System.out.println("Nhap ten nguoi can tim : ");
-		String fullName = sc.nextLine();
-		System.out.println("Nhap ten phong ban : ");
-		String department = sc.nextLine();
+	protected void input(){
+		System.out.println("Ho va ten : ");
+		fullName = sc.nextLine();
 		
-		for(int i=0;i<list.size();i++){
-			if((list.get(i).fullName).equals(fullName) && (list.get(i).department).equals(department)){
-				System.out.println(list.get(i));
-			}else{
-				continue;
-			}	
-		}
+		System.out.println("He so luong : ");
+		salaryMultiplier = sc.nextInt();
 	}
+	
+	protected void print(){
+		System.out.println("Ten Day Du: " + fullName);
+		System.out.println("He so luong: " + salaryMultiplier);
+	}
+	
+	
 
+	
 }

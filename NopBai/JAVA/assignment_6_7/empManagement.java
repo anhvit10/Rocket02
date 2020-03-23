@@ -1,49 +1,55 @@
 package assignment_6_7;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
+import java.util.Scanner;
 
-public class empManagement extends nhanVien {
+public class empManagement {
 	
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		
-		List<giaoSu> GiaoSu = new ArrayList<giaoSu>();
-		GiaoSu.add(new giaoSu("Doan Van Hau", "A+", "bachelor", 365, 7));
-		GiaoSu.add(new giaoSu("Dang Van Lam", "A", "master", 365, 7));
-		GiaoSu.add(new giaoSu("Do Duy Manh", "B", "bachelor", 365, 7));
-		GiaoSu.add(new giaoSu("Que Ngoc Hai", "A+", "master", 365, 7));
-		GiaoSu.add(new giaoSu("Tran Dinh Trong", "A+", "bachelor", 365, 7));
-		GiaoSu.add(new giaoSu("Bui Tien Dung", "A+", "doctor", 365, 7));
-	    GiaoSu.add(new giaoSu("Vu Van Thanh", "B", "bachelor", 365, 7));
-	    GiaoSu.add(new giaoSu("Phan Van Duc", "B", "doctor", 365, 7));
+		Scanner sc = new Scanner(System.in);
 		
-		List<canBo> CanBo = new ArrayList<canBo>();
-		CanBo.add(new canBo("Doan Van Hau", "marketing", "departmentHead", 365, 7));
-		CanBo.add(new canBo("Dang Van Lam", "marketing", "departmentHead", 365, 7));
-	    CanBo.add(new canBo("Do Duy Manh", "marketing", "departmentHead", 365, 7));
-	    CanBo.add(new canBo("Que Ngoc Hai", "marketing", "departmentHead", 365, 7));
-	    CanBo.add(new canBo("Tran Dinh Trong", "entertainment", "departmentHead", 365, 7));
-	    CanBo.add(new canBo("Bui Tien Dung", "marketing", "departmentHead", 365, 7));
-	    CanBo.add(new canBo("Tran Dinh Trong", "marketing", "departmentHead", 365, 7));
-	    CanBo.add(new canBo("Nguyen Cong Phuong", "marketing", "departmentHead", 365, 7));
-	    
-	    empManagement t = new empManagement();
-	    t.find(CanBo);
-	    
-	    System.out.println("\t\tDanh sach Giao Su ");
-	    System.out.println("    Name      Faculty      AD   MTTime  SM  salary");
-        Collections.sort(GiaoSu, new Comparator<giaoSu>() {
-            @Override
-            public int compare(giaoSu o1, giaoSu o2) {
-                return o1.fullName.compareTo(o2.fullName);
-            }
-        });
-        for (giaoSu student : GiaoSu) {
-            System.out.println(student.toString());
-        }
+		//nhap giao su
+		List<giaoSu> giaoSus = new ArrayList<>();
+
+		System.out.print("Ban muon nhap bao nhieu giao su: ");
+		int soLuongGiaoSu = sc.nextInt();
+		for (int i = 0; i < soLuongGiaoSu; i++) {
+			System.out.println("Nhap thong tin giao su thu " + (i + 1) + " :");
+			giaoSu giaosu = new giaoSu();
+			giaosu.input();
+			giaoSus.add(giaosu);
+		}
+
+		for (int i = 0; i < giaoSus.size(); i++) {
+			System.out.println("Thong tin giao su thu " + (i + 1) + " la:");
+			giaoSus.get(i).print();
+		}
+		
+		// nhap can bo:
+		List<canBo> canBos = new ArrayList<>();
+		System.out.println("Ban muon nhap bao nhieu can bo: ");
+		int soLuongCanBo = sc.nextInt();
+
+		for (int i = 0; i < soLuongCanBo; i++) {
+			System.out.println("Nhap Thong Tin Can Bo thu " + (i + 1) + " :");
+			canBo canbo = new canBo();
+			canbo.input();
+			canBos.add(canbo);
+		}
+		
+		for (int i = 0; i < canBos.size(); i++) {
+			System.out.println("Thong tin can bo thu " + (i + 1) + ": ");
+			canBos.get(i).print();
+		}
+		
+		// bai 7 : tim kiem can bo va sap xep giao su 	
+		searchAndSort searchPeople = new searchAndSort();
+		searchPeople.search(canBos);	
+		
+		searchAndSort sort = new searchAndSort();
+		sort.sort(giaoSus);		
 	}
-	
-	
 }

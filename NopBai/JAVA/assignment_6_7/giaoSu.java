@@ -1,36 +1,108 @@
 package assignment_6_7;
 
-public class giaoSu extends nhanVien{
-	
-	private String faculty; //nang luc
-	private String academicDegree; //bang cap
-	private enum AcademicDegree{
-		bachelor, master, doctor;
-	}
-	private int monthlyTeachingTime; //so gio day hang thang	
-	
-	protected giaoSu(String fullName, String faculty, String academicDegree, int monthlyTeachingTime, int salaryMultiplier ){
-		this.fullName = fullName;
-		this.faculty = faculty;
-		this.academicDegree = academicDegree;
-		this.salaryMultiplier = salaryMultiplier;
-		this.monthlyTeachingTime = monthlyTeachingTime;
-		
-		if ((this.academicDegree).equals(AcademicDegree.bachelor)){
-			salary = this.salaryMultiplier*730 + 300 + this.monthlyTeachingTime*45;
-		}else if ((this.academicDegree).equals(AcademicDegree.master)){
-			salary = this.salaryMultiplier*730 + 500 + this.monthlyTeachingTime*45;
-		}else{
-			salary = this.salaryMultiplier*730 + 1000 + this.monthlyTeachingTime*45;
-		}
-	}
-	
-	@Override 
-	public String toString(){
-		System.out.println("--------------------------------------------------------------");
-		return fullName  +"	 "+ faculty  +"	"+ academicDegree  +"   "+ monthlyTeachingTime  +"    "+ salaryMultiplier  +"   "+ salary ;		
-		}
-	
+import java.util.regex.Pattern;
 
+public class giaoSu extends nhanVien implements Comparable<Object>{
+	
+	String faculty; //nang luc
+	AcademicDegree academicDegree; //bang cap
+	int monthlyTeachingTime; //so gio day hang thang
+	
+	class AcademicDegree {
+		String academicDegree;
+		String bachelor;
+		String master;
+		String doctor;
+
+		@Override
+		public String toString() {
+			String result = "";
+			if (bachelor != null && !bachelor.isEmpty()) {
+				result += "bachelor";
+			}
+			if (master != null && !master.isEmpty()) {
+				result += "master";
+			}
+			if (doctor != null && !doctor.isEmpty()) {
+				result += "doctor";
+			}
+			return result;
+		}
+	
+	}
+
+	@Override
+	protected void input(){
+		super.input();
+		System.out.println("Nang Luc: ");
+		faculty = sc.nextLine();
+		faculty = sc.nextLine();
+		
+		academicDegree = new AcademicDegree();
+
+		System.out.println("Bang cap: ");
+		academicDegree.academicDegree = sc.nextLine();
+
+		System.out.println("Thoi gian day hang thang: ");
+		monthlyTeachingTime = sc.nextInt();
+	}
+	
+	public void setAllowance() {
+
+		if (academicDegree.doctor != null) {
+			allowance = 1000;
+
+		} else if (academicDegree.master != null) {
+			allowance = 500;
+
+		} else {
+			allowance = 300;
+		}
+	}
+	
+	public void setSalary() {
+		salary = salaryMultiplier*730 + allowance + monthlyTeachingTime*45;
+	}
+	
+	public void print() {
+		super.print();
+		setAllowance();
+		setSalary();
+		System.out.println("Nang Luc: " + faculty);
+		System.out.println("Bang Cap: " + academicDegree.academicDegree);
+		System.out.println("Thoi gian day hang thang: " + monthlyTeachingTime);
+		System.out.println("Tien phu cap : " + allowance);
+		System.out.println("Tien Luong: " + salary);
+	}
+	
+	@Override
+	public int compareTo(Object obj) {
+		giaoSu giaoSu = (giaoSu) obj;
+
+		String professionalName1 = reverseWords(fullName);
+		String professionalName2 = reverseWords(giaoSu.fullName);
+
+		return professionalName2.compareToIgnoreCase(professionalName1) * (-1);
+	}
+
+	String reverseWords(String str) {
+
+		// chi dinh ki tu khoang trang don de tach chuoi
+		Pattern pattern = Pattern.compile("\\s");
+
+		// tach chuoi va luu vao mang
+		String[] temp = pattern.split(str);
+		String result = "";
+
+		// luu mang theo thu nguoc lai
+		for (int i = 0; i < temp.length; i++) {
+			if (i == temp.length - 1)
+				result = temp[i] + result;
+			else
+				result = " " + temp[i] + result;
+		}
+		// mang theo thu tu nguoc lai
+		return result;
+	}
 }
 
