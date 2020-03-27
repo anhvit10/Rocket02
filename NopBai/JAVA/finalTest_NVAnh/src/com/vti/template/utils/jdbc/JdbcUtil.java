@@ -13,7 +13,7 @@ import com.vti.template.utils.Constant;
 
 
 /**
- * This class is . 
+ * This class is JdbcUtil. 
  * 
  * @Description: .
  * @author: NVAnh
@@ -32,7 +32,7 @@ public class JdbcUtil {
 
 	
 	/**
-	 * This method is . 
+	 * This method getInstance . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -66,7 +66,7 @@ public class JdbcUtil {
 
 	
 	/**
-	 * This method is . 
+	 * This method check connect . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -104,7 +104,7 @@ public class JdbcUtil {
 
 	
 	/**
-	 * This method is . 
+	 * This method disconnect dtb . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -127,7 +127,7 @@ public class JdbcUtil {
 
 	
 	/**
-	 * This method is . 
+	 * This method check null . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -160,7 +160,7 @@ public class JdbcUtil {
 
 	
 	/**
-	 * This method is . 
+	 * This method check update . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -245,7 +245,7 @@ public class JdbcUtil {
 
 	
 	/**
-	 * This method is . 
+	 * This method check  . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh

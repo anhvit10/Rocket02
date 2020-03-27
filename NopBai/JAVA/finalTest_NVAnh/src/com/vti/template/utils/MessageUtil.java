@@ -2,7 +2,7 @@ package com.vti.template.utils;
 
 
 /**
- * This class is . 
+ * This class is MessageUtil 
  * 
  * @Description: .
  * @author: NVAnh

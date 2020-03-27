@@ -8,7 +8,7 @@ import com.vti.template.form.LoginInput;
 
 
 /**
- * This class is . 
+ * This class is LoginService. 
  * 
  * @Description: .
  * @author: NVAnh

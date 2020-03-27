@@ -2,7 +2,7 @@ package com.vti.template.utils;
 
 
 /**
- * This class is . 
+ * This class is Constant .
  * 
  * @Description: .
  * @author: NVAnh
@@ -14,7 +14,7 @@ package com.vti.template.utils;
 public class Constant {
 
 	// MySQL
-	public static final String CONNECTION_STRING = "jdbc:mysql://localhost:3306/QuanLyUCV?autoReconnect=true&useSSL=false&characterEncoding=latin1&relaxAutoCommit=true";
+	public static final String CONNECTION_STRING = "jdbc:mysql://localhost:3306/user?autoReconnect=true&useSSL=false&characterEncoding=latin1&relaxAutoCommit=true";
 	public static final String DRIVER_SQL_NAME = "com.mysql.cj.jdbc.Driver";
 	public static final String DATABASE_USERNAME = "root";
 	public static final String DATABASE_PASSWORD = "root";

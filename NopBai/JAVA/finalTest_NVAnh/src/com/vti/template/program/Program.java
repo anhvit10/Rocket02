@@ -1,3 +1,4 @@
+
 package com.vti.template.program;
 
 import java.util.Scanner;
@@ -10,7 +11,7 @@ import com.vti.template.utils.ScannerUtil;
 
 
 /**
- * This class is . 
+ * This class is main program. 
  * 
  * @Description: .
  * @author: NVAnh

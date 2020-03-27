@@ -2,7 +2,7 @@ package com.vti.template.utils.jdbc;
 
 
 /**
- * This class is . 
+ * This class is SqlStatement. 
  * 
  * @Description: .
  * @author: NVAnh
@@ -37,7 +37,7 @@ public class SqlStatement {
       + "VALUES (?, ?)";
 
   public static final String SQL_INSERT_USER = 
-  "INSERT INTO Candidate ( Email,FirstName,LastName,Phone	) " 
+  "INSERT INTO Candidate ( Email,FirstName,LastName,Phone ) " 
   + "VALUES (?, ?, ?, ?)";
   
   public static final String SQL_CHECK_EMAIL_EXITS = 

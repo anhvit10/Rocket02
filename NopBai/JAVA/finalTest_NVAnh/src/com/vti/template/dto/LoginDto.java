@@ -1,9 +1,7 @@
 
 package com.vti.template.dto;
 
-import com.vti.template.view.CandidateView;
-
-
+import com.vti.template.view.UserView;
 
 /**
  * This class is LoginDto. 
@@ -67,14 +65,14 @@ public class LoginDto {
 	 * @modifer_date: Mar 25, 2020
 	 * @param view
 	 */
-	public LoginDto(CandidateView view) {
+	public LoginDto(UserView view) {
 		account = view.getAccount();
 		fullName = view.getFullName();
 	}
 
 	
 	/**
-	 * This method is LoginDto . 
+	 * This method return user view. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -85,8 +83,8 @@ public class LoginDto {
 	 * @param dto
 	 * @return
 	 */
-	public CandidateView toEntity(LoginDto dto) {
-		return new CandidateView()
+	public UserView toEntity(LoginDto dto) {
+		return new UserView()
 				.setAccount(dto.getAccount())
 				.setFullName(dto.getFullName());
 	}

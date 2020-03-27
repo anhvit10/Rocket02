@@ -2,7 +2,7 @@
 package com.vti.template.form;
 
 /**
- * This class is . 
+ * This class is UserInput. 
  * 
  * @Description: .
  * @author: NVAnh

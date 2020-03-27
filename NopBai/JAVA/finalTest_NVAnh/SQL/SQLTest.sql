@@ -29,8 +29,8 @@ DROP TABLE IF EXISTS 	Employee;
 CREATE TABLE	Employee (
 		`ID`				SMALLINT AUTO_INCREMENT PRIMARY KEY,
 		ProSkill			ENUM('dev','Test','java'),
-		ProjectName 		NVARCHAR(30) NOT NULL,
-        IDuser			SMALLINT NOT NULL,
+		ProjectName 		ENUM('Testing System', 'CRM','TimeSheet')
+        IDuser				SMALLINT NOT NULL,
         FOREIGN KEY (IDuser) REFERENCES `User` (`ID`) ON DELETE CASCADE
         ); 
         

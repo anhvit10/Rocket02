@@ -6,10 +6,10 @@ import com.vti.template.dto.LoginDto;
 import com.vti.template.form.LoginInput;
 import com.vti.template.repository.LoginRepository;
 import com.vti.template.repository.LoginRepositoryImpl;
-import com.vti.template.view.CandidateView;
+import com.vti.template.view.UserView;
 
 /**
- * This class is . 
+ * This class is LoginServiceImpl. 
  * 
  * @Description: .
  * @author: NVAnh
@@ -39,7 +39,7 @@ public class LoginServiceImpl implements LoginService{
 	}
 	@Override
 	public LoginDto login(LoginInput input) {
-		CandidateView userView=repository.login(input);
+		UserView userView=repository.login(input);
 		//check userView not null
 		if (userView==null) {
 			return null;

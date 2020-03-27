@@ -17,7 +17,7 @@ import com.vti.template.utils.jdbc.SqlStatement;
 
 
 /**
- * This class is . 
+ * This class is RegisterRepositoryImpl. 
  * 
  * @Description: .
  * @author: NVAnh

@@ -11,7 +11,7 @@ import com.vti.template.utils.validate.ValidateForm;
 
 
 /**
- * This class is . 
+ * This class is RegisterController. 
  * 
  * @Description: .
  * @author: NVAnh
@@ -42,7 +42,7 @@ public class RegisterController {
 
 	
 	/**
-	 * This method is RegisterEmplyee. 
+	 * This method check RegisterEmplyee. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -63,7 +63,7 @@ public class RegisterController {
 
 	
 	/**
-	 * This method is RegisterManager. 
+	 * This method check RegisterManager. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -83,7 +83,7 @@ public class RegisterController {
 
 	
 	/**
-	 * This method is RegisterUser. 
+	 * This method check RegisterUser. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh

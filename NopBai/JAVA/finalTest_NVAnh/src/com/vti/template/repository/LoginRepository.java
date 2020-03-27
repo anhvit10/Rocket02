@@ -1,14 +1,13 @@
-//
 
 package com.vti.template.repository;
 
 import com.vti.template.form.LoginInput;
-import com.vti.template.view.CandidateView;
+import com.vti.template.view.UserView;
 
 
 
 /**
- * This class is . 
+ * This class is interface LoginRepository. 
  * 
  * @Description: .
  * @author: NVAnh
@@ -18,5 +17,5 @@ import com.vti.template.view.CandidateView;
  * @modifer_date: Mar 25, 2020
  */
 public interface LoginRepository  {
-	public CandidateView login(LoginInput input);
+	public UserView login(LoginInput input);
 }

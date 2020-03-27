@@ -15,9 +15,8 @@ import com.vti.template.utils.Constant;
 import com.vti.template.utils.ScannerUtil;
 
 
-
 /**
- * This class is . 
+ * This class is function list. 
  * 
  * @Description: .
  * @author: NVAnh
@@ -29,7 +28,7 @@ import com.vti.template.utils.ScannerUtil;
 public class Function {
 	
 	/**
-	 * This method is . 
+	 * This method is Login. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -69,7 +68,7 @@ public class Function {
 
 	
 	/**
-	 * This method is . 
+	 * This method is register. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh

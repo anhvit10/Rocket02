@@ -9,7 +9,7 @@ import com.vti.template.form.UserInput;
 
 
 /**
- * This class is . 
+ * This class is interface RegisterService. 
  * 
  * @Description: .
  * @author: NVAnh
@@ -21,7 +21,7 @@ import com.vti.template.form.UserInput;
 public interface RegisterService {
 	
 	/**
-	 * This method is . 
+	 * This method check RegisterUserInput. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -35,7 +35,7 @@ public interface RegisterService {
 	public boolean RegisterUserInput(UserInput input);
 	
 	/**
-	 * This method is . 
+	 * This method check RegisterEmplyeeInput . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -49,7 +49,7 @@ public interface RegisterService {
 	public boolean RegisterEmplyeeInput(EmplyeeInput input);
 
 	/**
-	 * This method is . 
+	 * This method check RegisterManagerInput. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh

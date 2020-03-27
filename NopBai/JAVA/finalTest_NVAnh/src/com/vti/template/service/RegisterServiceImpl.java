@@ -11,7 +11,7 @@ import com.vti.template.repository.RegisterRepositoryImpl;
 
 
 /**
- * This class is . 
+ * This class is RegisterServiceImpl. 
  * 
  * @Description: .
  * @author: NVAnh
@@ -21,8 +21,19 @@ import com.vti.template.repository.RegisterRepositoryImpl;
  * @modifer_date: Mar 25, 2020
  */
 public class RegisterServiceImpl implements RegisterService {
+	//variable
 	private RegisterRepository repository;
 
+	/**
+	 * Constructor for class RegisterServiceImpl.
+	 * 
+	 * @Description: .
+	 * @author: NVAnh
+	 * @create_date: Mar 27, 2020
+	 * @version: 1.0
+	 * @modifer: NVAnh
+	 * @modifer_date: Mar 27, 2020
+	 */
 	public RegisterServiceImpl() {
 		repository = new RegisterRepositoryImpl();
 	}

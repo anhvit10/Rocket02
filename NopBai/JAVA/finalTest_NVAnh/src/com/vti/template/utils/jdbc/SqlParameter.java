@@ -2,7 +2,7 @@ package com.vti.template.utils.jdbc;
 
 
 /**
- * This class is . 
+ * This class is SqlParameter. 
  * 
  * @Description: .
  * @author: NVAnh

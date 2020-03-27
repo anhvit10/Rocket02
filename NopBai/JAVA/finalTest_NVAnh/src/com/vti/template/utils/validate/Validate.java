@@ -7,7 +7,7 @@ import com.vti.template.utils.MethodUtil;
 
 
 /**
- * This class is . 
+ * This class is Validate. 
  * 
  * @Description: .
  * @author: NVAnh
@@ -20,7 +20,7 @@ public class Validate {
 
 	
 	/**
-	 * This method is . 
+	 * This method check email exist . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -54,7 +54,7 @@ public class Validate {
 
 	
 	/**
-	 * This method is . 
+	 * This method check pass exist . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -81,7 +81,7 @@ public class Validate {
 	}
 
 	/**
-	 * This method is . 
+	 * This method check phone exist . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -116,7 +116,7 @@ public class Validate {
 
 	
 	/**
-	 * This method is . 
+	 * This method check projectName exist . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -139,7 +139,7 @@ public class Validate {
 
 	
 	/**
-	 * This method is . 
+	 * This method check proskill exist . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -163,7 +163,7 @@ public class Validate {
 
 
 	/**
-	 * This method is . 
+	 * This method check ExpInYear exist. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -186,7 +186,7 @@ public class Validate {
 
 	
 	/**
-	 * This method is . 
+	 * This method check length . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -207,7 +207,7 @@ public class Validate {
 
 	
 	/**
-	 * This method is . 
+	 * This method check length . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh

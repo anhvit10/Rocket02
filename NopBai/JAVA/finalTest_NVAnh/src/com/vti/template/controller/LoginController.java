@@ -9,7 +9,7 @@ import com.vti.template.utils.validate.ValidateForm;
 
 
 /**
- * This class is . 
+ * This class is LoginController. 
  * 
  * @Description: .
  * @author: NVAnh

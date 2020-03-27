@@ -11,12 +11,12 @@ import com.vti.template.form.LoginInput;
 import com.vti.template.utils.jdbc.JdbcUtil;
 import com.vti.template.utils.jdbc.SqlParameter;
 import com.vti.template.utils.jdbc.SqlStatement;
-import com.vti.template.view.CandidateView;
+import com.vti.template.view.UserView;
 
 
 
 /**
- * This class is . 
+ * This class is LoginRepositoryImpl. 
  * 
  * @Description: .
  * @author: NVAnh
@@ -25,7 +25,7 @@ import com.vti.template.view.CandidateView;
  * @modifer: NVAnh
  * @modifer_date: Mar 25, 2020
  */
-public  class LoginRepositoryImpl implements LoginRepository {
+public class LoginRepositoryImpl implements LoginRepository {
 	private JdbcUtil jdbc;
 
 	
@@ -56,7 +56,7 @@ public  class LoginRepositoryImpl implements LoginRepository {
 	 */
 
 	@Override
-	public CandidateView login(LoginInput input) {
+	public UserView login(LoginInput input) {
 		List<SqlParameter> parameters = new ArrayList<SqlParameter>();
 
 		// add parameter
@@ -75,7 +75,7 @@ public  class LoginRepositoryImpl implements LoginRepository {
 		//get data
 		try {
 			while (resultSet.next()) {
-				return new CandidateView()
+				return new UserView()
 						.setAccount(resultSet.getString("Email"))
 						.setFullName(resultSet.getString("Fullname"));
 				

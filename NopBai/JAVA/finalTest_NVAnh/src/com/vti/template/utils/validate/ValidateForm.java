@@ -7,7 +7,7 @@ import com.vti.template.form.UserInput;
 
 
 /**
- * This class is . 
+ * This class is ValidateForm. 
  * 
  * @Description: .
  * @author: NVAnh
@@ -19,7 +19,7 @@ import com.vti.template.form.UserInput;
 public class ValidateForm {
 
 	/**
-	 * This method is . 
+	 * This method check ValidateLoginInputForm. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -49,7 +49,7 @@ public class ValidateForm {
 
 	
 	/**
-	 * This method is . 
+	 * This method check ValidateUserInputForm. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -81,7 +81,7 @@ public class ValidateForm {
 
 	
 	/**
-	 * This method is . 
+	 * This method check ValidateEmplyeeInputForm . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -104,7 +104,7 @@ public class ValidateForm {
 	}
 
 	/**
-	 * This method is . 
+	 * This method check ValidateManagerInputExpForm . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh

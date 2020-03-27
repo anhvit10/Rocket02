@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 
 /**
- * This class is . 
+ * This class is MethodUtil. 
  * 
  * @Description: .
  * @author: NVAnh
@@ -18,7 +18,7 @@ public class MethodUtil {
 
 	
 	/**
-	 * This method is . 
+	 * This method check null . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -35,7 +35,7 @@ public class MethodUtil {
 
 	
 	/**
-	 * This method is . 
+	 * This method check checkRegularExpression. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh

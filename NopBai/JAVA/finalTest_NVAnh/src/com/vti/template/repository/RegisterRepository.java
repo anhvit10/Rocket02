@@ -9,7 +9,7 @@ import com.vti.template.form.UserInput;
 
 
 /**
- * This class is . 
+ * This class is interface RegisterRepository. 
  * 
  * @Description: .
  * @author: NVAnh
@@ -22,7 +22,7 @@ public interface RegisterRepository {
 
 	
 	/**
-	 * This method is . 
+	 * This method is RegisterEmplyee. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -37,7 +37,7 @@ public interface RegisterRepository {
 
 	
 	/**
-	 * This method is . 
+	 * This method is RegisterManager. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -52,7 +52,7 @@ public interface RegisterRepository {
 
 	
 	/**
-	 * This method is . 
+	 * This method is RegisterUser. 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
@@ -66,7 +66,7 @@ public interface RegisterRepository {
 	public int RegisterUser(UserInput input);
 
 	/**
-	 * This method is . 
+	 * This method check email exist . 
 	 * 
 	 * @Description: .
 	 * @author: NVAnh
