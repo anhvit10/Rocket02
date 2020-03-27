@@ -1,11 +1,12 @@
-package assignment_1;
+package assignment_2;
 
 import java.util.Random;
 
 public class bai_2 {
 
 	public static void main(String[] args) {
-String[] FirstNameArray = {"Nguyen ", "Tran ", "Pham ", "Vu ", "Ha ", "Bui ", "Ngo "};
+		
+		String[] FirstNameArray = {"Nguyen ", "Tran ", "Pham ", "Vu ", "Ha ", "Bui ", "Ngo "};
 		
 		String[] MiddleNameArray = {"Viet ", "Thi ", "Duy ", "Van ", "Thu ", "Tien ", "Trung "};
 				
