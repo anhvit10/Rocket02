@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  margin: 10px;
+  margin-top: 3px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+table{
+  border: 1px solid black;
+}
+body {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 5px;
+}
+.button1 {
+  margin: 10px;
+}
+thead {
+  background-color: gray;
+}
+.form-control {
+  margin: 15px;
+}
